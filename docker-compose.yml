@@ -1,0 +1,10 @@
+silex:
+  build: .
+  container_name: silex
+  hostname: silex
+  ports:
+    - 80:80
+  volumes:
+    - /c/Users/atos/develop/silex/httpdocs:/var/www/html
+    - /c/Users/atos/develop/silex:/home
+  tty: true
